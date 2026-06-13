@@ -1,0 +1,6 @@
+INSERT INTO parcel
+  (tracking_no, recipient_phone, express_company, shelf_location, status, inbound_time, outbound_time)
+VALUES
+  ('SF100000001', '13800138000', '顺丰', 'A-01-01', 'WAITING_PICKUP', DATEADD('HOUR', -2, CURRENT_TIMESTAMP), NULL),
+  ('YT100000001', '13800138000', '圆通', 'A-01-02', 'WAITING_PICKUP', DATEADD('HOUR', -50, CURRENT_TIMESTAMP), NULL),
+  ('JD100000001', '13900139000', '京东', 'B-02-01', 'PICKED_UP', DATEADD('HOUR', -60, CURRENT_TIMESTAMP), DATEADD('HOUR', -58, CURRENT_TIMESTAMP));
